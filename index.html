@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshFruit Store</title>
+  </head>
+  <body class="bg-green-50">
+    <div id="root"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshFruits - Premium Fruit Delivery</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-leaf"></i>
+        <span>FreshFruits</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search fruits...">
+        </div>
+        <div class="cart-icon" id="cartIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fresh Fruits Delivered to Your Door</h1>
+      <p>Organic, delicious, and farm-fresh fruits for a healthier you</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Shop Now</a>
+        <a href="#" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="features-container">
+      <div class="feature">
+        <i class="fas fa-truck"></i>
+        <h3>Free Delivery</h3>
+        <p>Free shipping on orders over $50</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-leaf"></i>
+        <h3>Organic Quality</h3>
+        <p>100% organic and pesticide-free</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-award"></i>
+        <h3>Fresh Guarantee</h3>
+        <p>Freshness guaranteed or your money back</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="categories-container">
+      <button class="category-btn active" data-category="all">All Fruits</button>
+      <button class="category-btn" data-category="berries">Berries</button>
+      <button class="category-btn" data-category="tropical">Tropical</button>
+      <button class="category-btn" data-category="citrus">Citrus</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="products-container" id="productsContainer">
+      <!-- Products will be loaded by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h2>Shopping Cart</h2>
+      <button class="close-cart" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <i class="fas fa-leaf"></i>
+          <span>FreshFruits</span>
+        </div>
+        <p class="footer-description">Bringing the freshest organic fruits to your doorstep since 2020.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Categories</h3>
+        <ul class="footer-links">
+          <li><a href="#">Berries</a></li>
+          <li><a href="#">Tropical</a></li>
+          <li><a href="#">Citrus</a></li>
+          <li><a href="#">All Fruits</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <div class="footer-contact">
+          <p>Email: info@freshfruits.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Address: 123 Fruit Street, Fresh City</p>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 FreshFruits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
